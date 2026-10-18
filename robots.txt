@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /locales/
+Sitemap: https://shovoxinternational.com/sitemap.xml

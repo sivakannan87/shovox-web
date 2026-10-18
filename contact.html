@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Let's Build a Business Partnership | SHOVOX INTERNATIONAL LLP</title>
+  <meta name="description" content="Contact SHOVOX INTERNATIONAL LLP for import, export, medical products, foods and spices, auto parts or electronics enquiries. Let's build a business partnership.">
+  <meta name="keywords" content="Contact Shovox International, trade inquiry, import export India, supplier partnership, business contact, Bangalore">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Us — Let's Build a Business Partnership | SHOVOX INTERNATIONAL LLP">
+  <meta property="og:description" content="Contact SHOVOX INTERNATIONAL LLP for import, export, medical products, foods and spices, auto parts or electronics enquiries. Let's build a business partnership.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shovoxinternational.com/contact.html">
+  <meta property="og:image" content="https://shovoxinternational.com/assets/shovox_official_logo.png">
+  <link rel="canonical" href="https://shovoxinternational.com/contact.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/shovox_official_logo.png" type="image/png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.35fr;
+      gap: 3rem;
+      align-items: flex-start;
+    }
+    .info-card-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      padding: 1.25rem;
+      border-radius: var(--radius);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      margin-bottom: 1.25rem;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+    .info-card-item:hover {
+      border-color: var(--teal);
+      transform: translateX(4px);
+    }
+    .info-card-icon {
+      font-size: 1.6rem;
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(15, 128, 128, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .category-quick-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+    .category-quick-btn {
+      padding: 0.75rem 0.85rem;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      background: #ffffff;
+      color: var(--navy);
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+    }
+    .category-quick-btn:hover {
+      border-color: var(--teal);
+      background: rgba(15, 128, 128, 0.05);
+      color: var(--teal);
+      transform: translateY(-2px);
+    }
+    .file-input-wrapper {
+      position: relative;
+      border: 1.5px dashed var(--border);
+      border-radius: 8px;
+      padding: 0.85rem 1rem;
+      background: var(--surface);
+      text-align: center;
+      cursor: pointer;
+    }
+    .file-input-wrapper input[type="file"] {
+      cursor: pointer;
+    }
+    @media (max-width: 992px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="brand-logo" aria-label="SHOVOX INTERNATIONAL LLP Home">
+        <img src="assets/shovox_official_logo.png" alt="SHOVOX INTERNATIONAL LLP Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">SHOVOX <span>INTERNATIONAL</span> LLP</span>
+          <span class="brand-tagline">Global Sourcing &amp; Trade</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="import-distribution.html" data-i18n="nav.import">Import &amp; Distribution</a></li>
+          <li><a href="medical.html" data-i18n="nav.medical">Medical Products</a></li>
+          <li><a href="foods-spices.html" data-i18n="nav.foods">Foods &amp; Spices</a></li>
+          <li><a href="auto-parts.html" data-i18n="nav.auto">Auto Parts</a></li>
+          <li><a href="elect.html" data-i18n="nav.elect">SHOVOX ELECT</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+          <li><a href="contact.html" class="active" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="lang-selector" aria-label="Language Selector">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ta" title="தமிழ்">தமிழ்</button>
+        <button class="lang-btn" data-lang="hi" title="हिंदी">हिंदी</button>
+        <button class="lang-btn" data-lang="ar" title="عربي">عربي</button>
+        <button class="lang-btn" data-lang="kn" title="ಕನ್ನಡ">ಕನ್ನಡ</button>
+      </div>
+
+      <button class="hamburger" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav" aria-label="Mobile Navigation">
+    <button class="mobile-nav-close" aria-label="Close Navigation">&times;</button>
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="import-distribution.html" data-i18n="nav.import">Import &amp; Distribution</a>
+    <a href="medical.html" data-i18n="nav.medical">Medical Products</a>
+    <a href="foods-spices.html" data-i18n="nav.foods">Foods &amp; Spices</a>
+    <a href="auto-parts.html" data-i18n="nav.auto">Auto Parts</a>
+    <a href="elect.html" data-i18n="nav.elect">SHOVOX ELECT</a>
+    <a href="about.html" data-i18n="nav.about">About Us</a>
+    <a href="contact.html" class="active" data-i18n="nav.contact">Contact</a>
+    <div class="lang-selector mt-2">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="ta" title="தமிழ்">தமிழ்</button>
+      <button class="lang-btn" data-lang="hi" title="हिंदी">हिंदी</button>
+      <button class="lang-btn" data-lang="ar" title="عربي">عربي</button>
+      <button class="lang-btn" data-lang="kn" title="ಕನ್ನಡ">ಕನ್ನಡ</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         PAGE HERO
+         ========================================================================== -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow" data-i18n="contact.title">CONTACT US</span>
+        <h1>Let's Build a Business Partnership.</h1>
+        <p data-i18n="contact.desc">Reach out to discuss your sourcing requirements, export enquiries or partnership opportunities.</p>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         MAIN CONTACT SECTION (TWO COLUMNS)
+         ========================================================================== -->
+    <section class="section">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <span class="breadcrumb-sep">/</span>
+          <span style="color: var(--navy); font-weight: 600;" data-i18n="nav.contact">Contact</span>
+        </nav>
+
+        <div class="contact-layout">
+
+          <!-- LEFT COLUMN: Contact Information & Quick Selectors -->
+          <div>
+            <span class="section-eyebrow">DIRECT CONTACT</span>
+            <h2 style="font-size: clamp(1.5rem, 2.5vw, 2rem); color: var(--navy); margin-bottom: 1.5rem; font-family: var(--font-display);">
+              Get in Touch with Our Trade Desk
+            </h2>
+            <p style="color: var(--text-muted); font-size: 0.98rem; line-height: 1.7; margin-bottom: 2rem;">
+              Whether you are an overseas importer seeking verified Indian products, an international manufacturer exploring Indian distribution, or a supplier seeking collaboration, our team is ready to assist.
+            </p>
+
+            <!-- Card 1: Email -->
+            <div class="info-card-item">
+              <div class="info-card-icon">📧</div>
+              <div>
+                <strong style="color: var(--navy); display: block; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">
+                  Business Email
+                </strong>
+                <a href="mailto:info@shovoxinternational.com" style="color: var(--teal); font-weight: 600; font-size: 1.05rem;">
+                  info@shovoxinternational.com
+                </a>
+                <span style="display: block; font-size: 0.8rem; color: var(--text-light); margin-top: 0.15rem;">
+                  (Placeholder — Official email TBC)
+                </span>
+              </div>
+            </div>
+
+            <!-- Card 2: Phone & WhatsApp -->
+            <div class="info-card-item">
+              <div class="info-card-icon">📱</div>
+              <div>
+                <strong style="color: var(--navy); display: block; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">
+                  WhatsApp / Phone
+                </strong>
+                <a href="tel:+919894117807" style="color: var(--navy); font-weight: 700; font-size: 1.05rem;">
+                  +91 98941 17807
+                </a>
+                <div style="margin-top: 0.35rem;">
+                  <a href="https://wa.me/919894117807?text=Hi%20Shovox%20International%2C%20I%20have%20a%20trade%20enquiry." target="_blank" rel="noopener noreferrer" style="color: #16a34a; font-size: 0.85rem; font-weight: 700; display: inline-flex; align-items: center; gap: 0.35rem;">
+                    Chat via WhatsApp &rarr;
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Office Location -->
+            <div class="info-card-item">
+              <div class="info-card-icon">📍</div>
+              <div>
+                <strong style="color: var(--navy); display: block; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">
+                  Office Location
+                </strong>
+                <span style="color: var(--navy); font-weight: 600; display: block; font-size: 0.95rem;">
+                  Bengaluru, Karnataka, India
+                </span>
+                <span style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.6; display: block; margin-top: 0.25rem;">
+                  F3, Navya Nidhi Apartment, 2nd Cross, Ramaiyah Reddy Layout,<br>
+                  Basavanagar, Bangalore — 560037, Karnataka, India
+                </span>
+              </div>
+            </div>
+
+            <!-- Card 4: Website -->
+            <div class="info-card-item">
+              <div class="info-card-icon">🌐</div>
+              <div>
+                <strong style="color: var(--navy); display: block; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">
+                  Official Website
+                </strong>
+                <a href="https://shovoxinternational.com" target="_blank" rel="noopener noreferrer" style="color: var(--teal); font-weight: 600; font-size: 1rem;">
+                  shovoxinternational.com
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 5: Business Hours -->
+            <div class="info-card-item">
+              <div class="info-card-icon">⏰</div>
+              <div>
+                <strong style="color: var(--navy); display: block; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">
+                  Business Hours
+                </strong>
+                <span style="color: var(--text-muted); font-size: 0.9rem; display: block;">
+                  Monday–Saturday: 9:00 AM – 6:00 PM IST
+                </span>
+                <span style="color: var(--text-muted); font-size: 0.9rem; display: block;">
+                  Sunday: By appointment
+                </span>
+              </div>
+            </div>
+
+            <!-- Enquiry Category Quick Selectors -->
+            <div style="margin-top: 2rem; padding: 1.5rem; background: var(--surface-sub); border-radius: var(--radius); border: 1px solid var(--border);">
+              <h3 style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--navy); margin-bottom: 0.5rem;">
+                Select Enquiry Category
+              </h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+                Click any category below to pre-select it in the enquiry form:
+              </p>
+              <div class="category-quick-grid">
+                <button type="button" class="category-quick-btn" data-cat="Import &amp; Distribution">
+                  <span>🚢</span>
+                  <span>Import &amp; Dist.</span>
+                </button>
+                <button type="button" class="category-quick-btn" data-cat="Medical Products">
+                  <span>🩺</span>
+                  <span>Medical</span>
+                </button>
+                <button type="button" class="category-quick-btn" data-cat="Foods &amp; Spices">
+                  <span>🌾</span>
+                  <span>Foods &amp; Spices</span>
+                </button>
+                <button type="button" class="category-quick-btn" data-cat="Auto Parts">
+                  <span>⚙️</span>
+                  <span>Auto Parts</span>
+                </button>
+                <button type="button" class="category-quick-btn" data-cat="SHOVOX ELECT">
+                  <span>⚡</span>
+                  <span>ELECT</span>
+                </button>
+                <button type="button" class="category-quick-btn" data-cat="Supplier Partnership">
+                  <span>🤝</span>
+                  <span>Supplier Part.</span>
+                </button>
+                <button type="button" class="category-quick-btn" data-cat="General Enquiry">
+                  <span>💬</span>
+                  <span>General</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT COLUMN: Contact Form -->
+          <div id="form-container">
+            <div class="card" style="padding: clamp(1.75rem, 4vw, 2.75rem); box-shadow: var(--shadow-lg); border-top: 4px solid var(--gold);">
+              <span class="section-eyebrow">ONLINE ENQUIRY</span>
+              <h2 style="font-size: clamp(1.4rem, 2.2vw, 1.85rem); color: var(--navy); margin-bottom: 0.5rem; font-family: var(--font-display);">
+                Send Us a Message
+              </h2>
+              <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1.75rem; line-height: 1.6;">
+                Please complete the form below. Provide product specifications, estimated quantities, or requirements for an accurate commercial response.
+              </p>
+
+              <!-- Success / Error notification containers -->
+              <div class="form-success" role="alert"></div>
+              <div class="form-error" role="alert"></div>
+
+              <form class="shovox-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contactForm" enctype="multipart/form-data">
+
+                <div class="form-grid">
+
+                  <!-- Full Name -->
+                  <div class="form-group">
+                    <label for="fullName" data-i18n="contact.name">Full Name *</label>
+                    <input type="text" id="fullName" name="full_name" placeholder="Your full name" required>
+                  </div>
+
+                  <!-- Company Name -->
+                  <div class="form-group">
+                    <label for="companyName" data-i18n="contact.company">Company Name</label>
+                    <input type="text" id="companyName" name="company_name" placeholder="Company / Business Name">
+                  </div>
+
+                  <!-- Business Email -->
+                  <div class="form-group">
+                    <label for="email" data-i18n="contact.email">Business Email *</label>
+                    <input type="email" id="email" name="email" placeholder="you@company.com" required>
+                  </div>
+
+                  <!-- Phone Number -->
+                  <div class="form-group">
+                    <label for="phone" data-i18n="contact.phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+91 98941 17807">
+                  </div>
+
+                  <!-- Country -->
+                  <div class="form-group">
+                    <label for="country" data-i18n="contact.country">Country</label>
+                    <input type="text" id="country" name="country" placeholder="e.g. India, UAE, UK, USA">
+                  </div>
+
+                  <!-- Enquiry Category -->
+                  <div class="form-group">
+                    <label for="enquiryCategory" data-i18n="contact.category">Enquiry Category *</label>
+                    <select id="enquiryCategory" name="enquiry_category" required>
+                      <option value="" disabled selected>Select an Enquiry Category</option>
+                      <option value="Import &amp; Distribution">Import &amp; Distribution</option>
+                      <option value="Medical Products">Medical Products</option>
+                      <option value="Foods &amp; Spices">Foods &amp; Spices</option>
+                      <option value="Auto Parts">Auto Parts</option>
+                      <option value="SHOVOX ELECT">SHOVOX ELECT</option>
+                      <option value="Supplier Partnership">Supplier Partnership</option>
+                      <option value="General Enquiry">General Enquiry</option>
+                    </select>
+                  </div>
+
+                  <!-- Product / Service -->
+                  <div class="form-group">
+                    <label for="productService" data-i18n="contact.product">Product / Service</label>
+                    <input type="text" id="productService" name="product_service" placeholder="e.g. Hospital Bedsheets, Turmeric, CNC Parts">
+                  </div>
+
+                  <!-- Estimated Quantity -->
+                  <div class="form-group">
+                    <label for="estimatedQuantity" data-i18n="contact.quantity">Estimated Quantity</label>
+                    <input type="text" id="estimatedQuantity" name="quantity" placeholder="e.g. 5,000 pcs, 1 Container">
+                  </div>
+
+                  <!-- Message -->
+                  <div class="form-group full">
+                    <label for="message" data-i18n="contact.message">Your Message *</label>
+                    <textarea id="message" name="message" placeholder="Please specify your technical requirements, target specifications, delivery timeline, or questions..." required></textarea>
+                  </div>
+
+                  <!-- Attachment -->
+                  <div class="form-group full">
+                    <label for="attachment" data-i18n="contact.attachment">Attachment (Optional: RFQ, Technical Drawings, Specs)</label>
+                    <div class="file-input-wrapper">
+                      <input type="file" id="attachment" name="attachment" accept=".pdf,.doc,.docx,.jpg,.png,.xlsx">
+                      <span style="display: block; font-size: 0.78rem; color: var(--text-muted); margin-top: 0.35rem;">
+                        Supported formats: PDF, DOC, DOCX, JPG, PNG, XLSX (Max 10MB)
+                      </span>
+                    </div>
+                  </div>
+
+                  <!-- Privacy Consent -->
+                  <div class="form-group full">
+                    <div style="display: flex; align-items: flex-start; gap: 0.75rem; margin-top: 0.5rem;">
+                      <input type="checkbox" id="privacyConsent" name="privacy_consent" required style="width: 18px; height: 18px; margin-top: 0.2rem; cursor: pointer; flex-shrink: 0;">
+                      <label for="privacyConsent" style="font-size: 0.85rem; font-weight: 500; color: var(--text-muted); cursor: pointer; line-height: 1.5;">
+                        I have read and agree to the <a href="privacy.html" target="_blank" style="color: var(--teal); text-decoration: underline;">Privacy Policy</a> and consent to SHOVOX INTERNATIONAL LLP contacting me regarding my enquiry. *
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="form-group full">
+                    <button type="submit" class="btn btn-gold" data-i18n="contact.submit" style="width: 100%; padding: 1rem; font-size: 1.05rem;">
+                      Send Enquiry &rarr;
+                    </button>
+                  </div>
+
+                </div>
+
+              </form>
+
+              <div class="disclaimer" style="margin-top: 1.5rem; font-size: 0.85rem;">
+                <strong>Response Commitment:</strong> We respond to all enquiries within 2–3 business days. For urgent requirements, please contact us directly via WhatsApp at +91 98941 17807.
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       WHATSAPP FLOATING BUTTON
+       ========================================================================== -->
+  <a href="https://wa.me/919894117807?text=Hi%20Shovox%20International%2C%20I%20have%20an%20urgent%20sourcing%20enquiry."
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.9 15.9 0 0 0 16.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.302 22.602c-.388 1.094-1.938 2.002-3.17 2.266-.844.18-1.946.322-5.66-1.216-4.754-1.968-7.81-6.792-8.046-7.108-.228-.316-1.9-2.53-1.9-4.826s1.2-3.426 1.628-3.894c.428-.468.934-.586 1.246-.586.312 0 .624.004.896.016.288.014.674-.108 1.054.804.388.934 1.322 3.23 1.438 3.462.116.232.194.502.038.81-.156.316-.232.512-.464.788-.232.278-.488.62-.696.832-.232.232-.474.484-.204.95.27.464 1.2 1.98 2.578 3.21 1.772 1.58 3.266 2.07 3.73 2.302.464.232.734.194 1.004-.116.27-.312 1.16-1.35 1.468-1.816.31-.468.618-.388 1.044-.232.428.156 2.716 1.282 3.18 1.514.464.232.774.35.89.542.116.194.116 1.094-.272 2.188z"/>
+    </svg>
+  </a>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo mb-2">
+            <img src="assets/shovox_official_logo.png" alt="SHOVOX INTERNATIONAL LLP Logo" class="footer-brand-logo">
+            <div class="brand-text">
+              <span class="brand-name" style="color: var(--white);">SHOVOX <span style="color: var(--gold);">INTERNATIONAL</span> LLP</span>
+            </div>
+          </a>
+          <p data-i18n="footer.tagline">
+            Connecting Global Markets Through Quality and Trust. India-based international trading business focused on responsible sourcing and long-term partnerships.
+          </p>
+          <p style="margin-top: 1rem; color: var(--gold); font-size: 0.88rem; font-weight: 600;">
+            Basavanagar, Bangalore — 560037, Karnataka, India
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.quick_links">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+            <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+            <li><a href="terms.html" data-i18n="footer.terms">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.divisions_label">Our Divisions</h4>
+          <ul class="footer-links">
+            <li><a href="import-distribution.html" data-i18n="nav.import">Import &amp; Distribution</a></li>
+            <li><a href="medical.html" data-i18n="nav.medical">SHOVOX MEDICAL</a></li>
+            <li><a href="foods-spices.html" data-i18n="nav.foods">SHOVOX FOODS &amp; SPICES</a></li>
+            <li><a href="auto-parts.html" data-i18n="nav.auto">SHOVOX AUTO PARTS</a></li>
+            <li><a href="elect.html" data-i18n="nav.elect">SHOVOX ELECT</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.leadership">Leadership</h4>
+          <ul class="footer-links">
+            <li style="color: rgba(241, 245, 249, 0.85); font-weight: 600;">
+              Dr Sivakannan Subramani<br>
+              <span style="font-size: 0.8rem; color: var(--gold);" data-i18n="footer.founder">Founder &amp; Managing Partner</span>
+            </li>
+            <li style="color: rgba(241, 245, 249, 0.85); font-weight: 600; margin-top: 0.75rem;">
+              Ms Rashmi H M<br>
+              <span style="font-size: 0.8rem; color: var(--gold);" data-i18n="footer.partner">Managing Partner</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> <span data-i18n="footer.copyright">SHOVOX INTERNATIONAL LLP. All rights reserved.</span></p>
+        <p>Basavanagar, Bangalore — 560037, Karnataka, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       SCRIPTS
+       ========================================================================== -->
+  <script src="js/i18n.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/forms.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Category Quick-Selector click handling
+    document.querySelectorAll('.category-quick-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const cat = this.getAttribute('data-cat');
+        const select = document.getElementById('enquiryCategory');
+        if (select && cat) {
+          select.value = cat;
+          select.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          select.style.borderColor = 'var(--teal)';
+          setTimeout(() => { select.style.borderColor = ''; }, 1500);
+          select.focus();
+        }
+      });
+    });
+
+    // Check URL parameters for pre-selected category (e.g. contact.html?category=medical)
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoryParam = urlParams.get('category');
+    if (categoryParam) {
+      const select = document.getElementById('enquiryCategory');
+      if (select) {
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].value.toLowerCase().includes(categoryParam.toLowerCase())) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "home": "Home",
+    "import": "Import & Distribution",
+    "medical": "Medical Products",
+    "foods": "Foods & Spices",
+    "auto": "Auto Parts",
+    "elect": "SHOVOX ELECT",
+    "about": "About Us",
+    "contact": "Contact",
+    "enquire": "Request a Quote"
+  },
+  "hero": {
+    "badge": "India-Based International Trading Business",
+    "subhead": "SHOVOX INTERNATIONAL LLP",
+    "h1": "Connecting Global Markets",
+    "h1_highlight": "Through Quality and Trust",
+    "desc": "SHOVOX INTERNATIONAL LLP is an India-based international trading business focused on connecting global buyers with suitable Indian suppliers and manufacturing partners. Our business interests include healthcare textiles, food and spices, precision-engineered components, electronics sourcing and international product trading.",
+    "btn_products": "Explore Our Products",
+    "btn_quote": "Request a Quote",
+    "btn_supplier": "Become a Supplier",
+    "btn_contact": "Contact Us"
+  },
+  "divisions": {
+    "title": "Our Business Divisions",
+    "desc": "Five focused divisions addressing distinct international trade verticals",
+    "import": { "name": "Import & Distribution", "desc": "Sourcing international products for the Indian market" },
+    "medical": { "name": "SHOVOX MEDICAL", "desc": "Healthcare textiles, hospital garments and medical supplies" },
+    "foods": { "name": "SHOVOX FOODS & SPICES", "desc": "Indian agricultural products for global markets" },
+    "auto": { "name": "SHOVOX AUTO PARTS", "desc": "Precision components and engineered parts" },
+    "elect": { "name": "SHOVOX ELECT", "desc": "Electronics sourcing, components and assembly" }
+  },
+  "focus": {
+    "title": "Our Priority Product Focus",
+    "desc": "Three initial product categories receiving focused commercial attention",
+    "textiles": { "name": "Hospital Textiles", "desc": "Hospital linen, patient gowns, uniforms and medical garments for international healthcare buyers." },
+    "turmeric": { "name": "Turmeric & Tea", "desc": "Premium Indian turmeric powder, CTC black tea and selected teas for global food importers." },
+    "components": { "name": "Precision Components", "desc": "CNC-machined parts, shafts, bushes and custom precision components to buyer specifications." }
+  },
+  "how_we_work": {
+    "title": "How We Work",
+    "desc": "A transparent, customer-focused sourcing process",
+    "step1": { "title": "Initial Enquiry", "desc": "Submit your product requirements, specifications and commercial targets." },
+    "step2": { "title": "Supplier Identification", "desc": "We identify and evaluate suitable Indian suppliers and manufacturing partners." },
+    "step3": { "title": "Commercial Coordination", "desc": "We manage communication, sampling, documentation and terms negotiation." },
+    "step4": { "title": "Order Facilitation", "desc": "We coordinate the order process through to shipment and delivery." }
+  },
+  "cta": {
+    "title": "Ready to Explore Business Opportunities?",
+    "desc": "Contact us to discuss your sourcing requirements or partnership interests.",
+    "btn_quote": "Request a Quotation",
+    "btn_contact": "Contact Us"
+  },
+  "footer": {
+    "tagline": "Connecting Global Markets Through Quality and Trust.",
+    "quick_links": "Quick Links",
+    "divisions_label": "Our Divisions",
+    "leadership": "Leadership",
+    "founder": "Founder & Managing Partner",
+    "partner": "Managing Partner",
+    "copyright": "SHOVOX INTERNATIONAL LLP. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  },
+  "contact": {
+    "title": "Let's Build a Business Partnership",
+    "desc": "Reach out to discuss your sourcing requirements, export inquiries or partnership opportunities.",
+    "name": "Full Name",
+    "company": "Company Name",
+    "email": "Business Email",
+    "phone": "Phone Number",
+    "country": "Country",
+    "category": "Enquiry Category",
+    "product": "Product / Service",
+    "quantity": "Estimated Quantity",
+    "message": "Your Message",
+    "attachment": "Attachment (optional)",
+    "privacy_consent": "I agree to the Privacy Policy",
+    "submit": "Send Enquiry",
+    "success": "Thank you for your enquiry. We will contact you within 2–3 business days.",
+    "error": "There was an error. Please email us at info@shovoxinternational.com"
+  },
+  "disclaimer": {
+    "general": "Product availability, specifications, certifications and pricing are subject to supplier confirmation, regulatory compliance and commercial feasibility. This information does not constitute a binding offer.",
+    "medical": "Supplier qualification, quality specifications, export eligibility and destination-country regulatory requirements must be confirmed before accepting any order. We do not claim sterile status, medical-grade performance or regulatory approval for any product.",
+    "food": "Food-safety requirements, export eligibility, laboratory testing and destination-country import regulations must be verified before commercial engagement. Nutritional values, certifications and geographic origin claims are not implied.",
+    "auto": "Manufacturing feasibility, inspection requirements, quality documentation, delivery terms and pricing are confirmed before an order is accepted. SHOVOX AUTO PARTS does not own a manufacturing facility."
+  }
+}
