@@ -735,6 +735,14 @@ a {
   line-height: 1.6;
 }
 
+.division-icon-wrap {
+  font-size: 2.25rem;
+  margin-bottom: 1.25rem;
+  line-height: 1;
+  display: inline-block;
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
+}
+
 .product-card {
   background: var(--white);
   border-radius: var(--radius);
