@@ -121,11 +121,14 @@ a {
 }
 
 .navbar .container {
+  max-width: 1440px;
+  width: 100%;
+  padding-inline: clamp(1rem, 2.5vw, 2.5rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 92px;
-  gap: 1rem;
+  height: 90px;
+  gap: 0.75rem;
 }
 
 .brand-logo {
@@ -177,20 +180,21 @@ a {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: clamp(0.75rem, 1.2vw, 1.5rem);
+  gap: clamp(0.35rem, 0.75vw, 0.95rem);
   align-items: center;
   margin: 0;
   padding: 0;
+  flex-shrink: 1;
 }
 
 .nav-links a {
-  font-size: 0.86rem;
+  font-size: 0.82rem;
   font-weight: 600;
   color: var(--text-muted);
   transition: color 0.2s ease;
   position: relative;
   display: inline-block;
-  padding: 0.25rem 0;
+  padding: 0.2rem 0;
   white-space: nowrap;
 }
 
@@ -280,18 +284,22 @@ a {
 
 /* Language selector */
 .lang-selector {
-  display: flex;
-  gap: 0.2rem;
+  display: inline-flex;
+  gap: 0.15rem;
   align-items: center;
   flex-shrink: 0;
+  background: rgba(15, 128, 128, 0.05);
+  border: 1px solid var(--border);
+  padding: 2px 4px;
+  border-radius: 8px;
 }
 
 .lang-btn {
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  padding: 0.25rem 0.5rem;
-  border-radius: 6px;
-  border: 1px solid var(--border);
+  padding: 0.2rem 0.38rem;
+  border-radius: 5px;
+  border: none;
   background: transparent;
   cursor: pointer;
   color: var(--text-muted);
@@ -1136,11 +1144,8 @@ textarea {
   animation-delay: 0.3s;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1220px) {
   .nav-links {
-    display: none;
-  }
-  .lang-selector {
     display: none;
   }
   .hamburger {
@@ -1210,4 +1215,29 @@ textarea {
     flex-direction: column;
     text-align: center;
   }
+}
+
+
+/* Machining Hub Capability Pills */
+.hub-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.95rem;
+  background: rgba(15, 128, 128, 0.08);
+  color: var(--navy);
+  border: 1.5px solid rgba(15, 128, 128, 0.25);
+  border-radius: 100px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition: all 0.2s ease;
+}
+.hub-pill:hover {
+  background: rgba(15, 128, 128, 0.14);
+  border-color: var(--teal);
+}
+.hub-check {
+  color: var(--teal);
+  font-weight: 800;
 }

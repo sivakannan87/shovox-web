@@ -24,26 +24,62 @@
   "divisions": {
     "title": "Our Business Divisions",
     "desc": "Five focused divisions addressing distinct international trade verticals",
-    "import": { "name": "Import & Distribution", "desc": "Sourcing international products for the Indian market" },
-    "medical": { "name": "SHOVOX MEDICAL", "desc": "Healthcare textiles, hospital garments and medical supplies" },
-    "foods": { "name": "SHOVOX FOODS & SPICES", "desc": "Indian agricultural products for global markets" },
-    "auto": { "name": "SHOVOX AUTO PARTS", "desc": "Precision components and engineered parts" },
-    "elect": { "name": "SHOVOX ELECT", "desc": "Electronics sourcing, components and assembly" }
+    "import": {
+      "name": "Import & Distribution",
+      "desc": "Sourcing international products for the Indian market"
+    },
+    "medical": {
+      "name": "SHOVOX MEDICAL",
+      "desc": "Healthcare textiles, hospital garments and medical supplies"
+    },
+    "foods": {
+      "name": "SHOVOX FOODS & SPICES",
+      "desc": "Indian agricultural products for global markets"
+    },
+    "auto": {
+      "name": "SHOVOX AUTO PARTS",
+      "desc": "Precision components and engineered parts"
+    },
+    "elect": {
+      "name": "SHOVOX ELECT",
+      "desc": "Electronics sourcing, components and assembly"
+    }
   },
   "focus": {
     "title": "Our Priority Product Focus",
     "desc": "Three initial product categories receiving focused commercial attention",
-    "textiles": { "name": "Hospital Textiles", "desc": "Hospital linen, patient gowns, uniforms and medical garments for international healthcare buyers." },
-    "turmeric": { "name": "Turmeric & Tea", "desc": "Premium Indian turmeric powder, CTC black tea and selected teas for global food importers." },
-    "components": { "name": "Precision Components", "desc": "CNC-machined parts, shafts, bushes and custom precision components to buyer specifications." }
+    "textiles": {
+      "name": "Hospital Textiles",
+      "desc": "Hospital linen, patient gowns, uniforms and medical garments for international healthcare buyers."
+    },
+    "turmeric": {
+      "name": "Turmeric & Tea",
+      "desc": "Premium Indian turmeric powder, CTC black tea and selected teas for global food importers."
+    },
+    "components": {
+      "name": "Precision Components",
+      "desc": "CNC-machined parts, shafts, bushes and custom precision components to buyer specifications."
+    }
   },
   "how_we_work": {
     "title": "How We Work",
     "desc": "A transparent, customer-focused sourcing process",
-    "step1": { "title": "Initial Enquiry", "desc": "Submit your product requirements, specifications and commercial targets." },
-    "step2": { "title": "Supplier Identification", "desc": "We identify and evaluate suitable Indian suppliers and manufacturing partners." },
-    "step3": { "title": "Commercial Coordination", "desc": "We manage communication, sampling, documentation and terms negotiation." },
-    "step4": { "title": "Order Facilitation", "desc": "We coordinate the order process through to shipment and delivery." }
+    "step1": {
+      "title": "Initial Enquiry",
+      "desc": "Submit your product requirements, specifications and commercial targets."
+    },
+    "step2": {
+      "title": "Supplier Identification",
+      "desc": "We identify and evaluate suitable Indian suppliers and manufacturing partners."
+    },
+    "step3": {
+      "title": "Commercial Coordination",
+      "desc": "We manage communication, sampling, documentation and terms negotiation."
+    },
+    "step4": {
+      "title": "Order Facilitation",
+      "desc": "We coordinate the order process through to shipment and delivery."
+    }
   },
   "cta": {
     "title": "Ready to Explore Business Opportunities?",
@@ -78,7 +114,7 @@
     "privacy_consent": "I agree to the Privacy Policy",
     "submit": "Send Enquiry",
     "success": "Thank you for your enquiry. We will contact you within 2–3 business days.",
-    "error": "There was an error. Please email us at info@shovoxinternational.com"
+    "error": "There was an error. Please email us at support@shovoxinternational.com"
   },
   "disclaimer": {
     "general": "Product availability, specifications, certifications and pricing are subject to supplier confirmation, regulatory compliance and commercial feasibility. This information does not constitute a binding offer.",
