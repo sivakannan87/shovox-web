@@ -77,7 +77,7 @@
           }
         } catch (err) {
           if (errorEl) {
-            errorEl.textContent = 'There was an error submitting your enquiry. Please email us directly at info@shovoxinternational.com';
+            errorEl.textContent = 'There was an error submitting your enquiry. Please email us directly at support@shovoxinternational.com';
             errorEl.style.display = 'block';
           }
         } finally {
