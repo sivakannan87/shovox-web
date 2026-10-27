@@ -1969,7 +1969,7 @@
           <h3>Healthcare Sourcing Form</h3>
           <p class="form-subtitle">Complete this RFP form to receive technical specifications and quotation details.</p>
 
-          <form class="shovox-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <form class="shovox-form" action="https://script.google.com/macros/s/AKfycbxxUDGWA-JM6zcIXuf46Ka6LhGzbyiuyipN-qLfD_dom-FyOrjXkCnrka40PyDIkesjHA/exec" method="POST">
             <!-- Hidden Page Source identifier -->
             <input type="hidden" name="_subject" value="New B2B Medical Enquiry — SHOVOX INTERNATIONAL LLP">
             <input type="hidden" name="division" value="SHOVOX MEDICAL">
@@ -2238,30 +2238,6 @@
       });
     }
 
-    // Fallback form handling if forms.js is not yet active
-    const medForm = document.querySelector('.shovox-form');
-    if (medForm) {
-      medForm.addEventListener('submit', function(e) {
-        // If action is placeholder or Formspree
-        if (medForm.getAttribute('action').includes('YOUR_FORM_ID')) {
-          e.preventDefault();
-          const successDiv = medForm.querySelector('.form-success');
-          const submitBtn = medForm.querySelector('.btn-submit');
-          if (submitBtn) {
-            submitBtn.textContent = 'Submitting Enquiry...';
-            submitBtn.disabled = true;
-          }
-          setTimeout(() => {
-            if (successDiv) successDiv.style.display = 'block';
-            if (submitBtn) {
-              submitBtn.textContent = '✓ Medical Enquiry Sent';
-              submitBtn.style.background = '#16a34a';
-            }
-            medForm.reset();
-          }, 1000);
-        }
-      });
-    }
   </script>
 
 </body>

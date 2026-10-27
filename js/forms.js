@@ -1,4 +1,4 @@
-// forms.js — Form handling for Shovox International
+// forms.js — Form handling for SHOVOX INTERNATIONAL LLP
 (function () {
   document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.shovox-form').forEach(form => {
@@ -41,40 +41,38 @@
           return;
         }
 
-        // Submit
+        // Submit state
         if (btn) {
           btn.disabled = true;
-          btn.textContent = 'Sending...';
+          btn.textContent = 'Sending Enquiry...';
         }
 
         try {
           const formData = new FormData(form);
           const action = form.getAttribute('action');
 
-          if (!action || action.includes('YOUR_FORM_ID')) {
-            // Demo mode
-            await new Promise(r => setTimeout(r, 1000));
-            if (successEl) {
-              successEl.textContent = 'Thank you for your enquiry. We will contact you within 2–3 business days.';
-              successEl.style.display = 'block';
-            }
-            form.reset();
-          } else {
-            const res = await fetch(action, {
+          // Send to Google Apps Script
+          try {
+            await fetch(action, {
               method: 'POST',
               body: formData,
-              headers: { 'Accept': 'application/json' }
+              mode: 'no-cors'
             });
-            if (res.ok) {
-              if (successEl) {
-                successEl.textContent = 'Thank you for your enquiry. We will contact you within 2–3 business days.';
-                successEl.style.display = 'block';
-              }
-              form.reset();
-            } else {
-              throw new Error('Submission failed');
-            }
+          } catch (fetchErr) {
+            // Fallback for strict CORS environments
+            const urlParams = new URLSearchParams(formData);
+            await fetch(action, {
+              method: 'POST',
+              body: urlParams,
+              mode: 'no-cors'
+            });
           }
+
+          if (successEl) {
+            successEl.textContent = 'Thank you for your enquiry. We will contact you within 2–3 business days.';
+            successEl.style.display = 'block';
+          }
+          form.reset();
         } catch (err) {
           if (errorEl) {
             errorEl.textContent = 'There was an error submitting your enquiry. Please email us directly at support@shovoxinternational.com';
