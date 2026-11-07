@@ -51,22 +51,22 @@
           const formData = new FormData(form);
           const action = form.getAttribute('action');
 
-          // Send to Google Apps Script
-          try {
-            await fetch(action, {
-              method: 'POST',
-              body: formData,
-              mode: 'no-cors'
-            });
-          } catch (fetchErr) {
-            // Fallback for strict CORS environments
-            const urlParams = new URLSearchParams(formData);
-            await fetch(action, {
-              method: 'POST',
-              body: urlParams,
-              mode: 'no-cors'
-            });
+          // Encode as URLSearchParams so Google Apps Script e.parameter captures every field
+          const urlParams = new URLSearchParams();
+          for (const [key, value] of formData.entries()) {
+            if (typeof value === 'string') {
+              urlParams.append(key, value);
+            } else if (value && value.name) {
+              urlParams.append(key, value.name);
+            }
           }
+
+          // Send to Google Apps Script
+          await fetch(action, {
+            method: 'POST',
+            body: urlParams,
+            mode: 'no-cors'
+          });
 
           if (successEl) {
             successEl.textContent = 'Thank you for your enquiry. We will contact you within 2–3 business days.';
