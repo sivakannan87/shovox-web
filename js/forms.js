@@ -43,6 +43,7 @@
 
         // Submit state
         if (btn) {
+          btn.setAttribute('data-original-text', btn.textContent);
           btn.disabled = true;
           btn.textContent = 'Sending Enquiry...';
         }
@@ -81,7 +82,7 @@
         } finally {
           if (btn) {
             btn.disabled = false;
-            btn.textContent = btn.getAttribute('data-original-text') || 'Send Enquiry';
+            btn.textContent = btn.getAttribute('data-original-text') || btn.textContent;
           }
         }
       });

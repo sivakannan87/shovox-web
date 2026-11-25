@@ -2,7 +2,8 @@
 (function () {
   const LANGS = ['en', 'ta', 'hi', 'ar', 'kn'];
   const RTL_LANGS = ['ar'];
-  let currentLang = localStorage.getItem('shovox-lang') || 'en';
+  let currentLang = 'en';
+  try { currentLang = localStorage.getItem('shovox-lang') || 'en'; } catch (e) {}
   let translations = {};
 
   async function loadTranslations(lang) {
@@ -60,7 +61,9 @@
     // Update lang buttons
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.lang === currentLang);
+      btn.setAttribute('aria-pressed', btn.dataset.lang === currentLang ? 'true' : 'false');
     });
+    document.querySelectorAll('.lang-current').forEach(el => { el.textContent = currentLang.toUpperCase(); });
   }
 
   function getNestedKey(obj, keyPath) {
@@ -70,7 +73,7 @@
   async function setLanguage(lang) {
     if (!LANGS.includes(lang)) lang = 'en';
     currentLang = lang;
-    localStorage.setItem('shovox-lang', lang);
+    try { localStorage.setItem('shovox-lang', lang); } catch (e) {}
     await loadTranslations(lang);
     applyTranslations();
   }
@@ -82,7 +85,7 @@
       const urlLang = urlParams.get('lang');
       if (urlLang && LANGS.includes(urlLang)) {
         currentLang = urlLang;
-        localStorage.setItem('shovox-lang', currentLang);
+        try { localStorage.setItem('shovox-lang', currentLang); } catch (e) {}
       }
     } catch (e) {
       // Ignore if URLSearchParams unsupported

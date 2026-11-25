@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#0a111c">
   <title>Privacy Policy | SHOVOX INTERNATIONAL LLP</title>
   <meta name="description" content="Privacy Policy for SHOVOX INTERNATIONAL LLP. Learn how we handle B2B trade inquiries, customer communication, and website data privacy.">
   <link rel="canonical" href="https://shovoxinternational.com/privacy.html">
-  <link rel="icon" href="assets/shovox_official_logo.png" type="image/png">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Privacy Policy | SHOVOX INTERNATIONAL LLP">
   <meta property="og:description" content="Privacy Policy and data transparency practices for SHOVOX INTERNATIONAL LLP.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://shovoxinternational.com/privacy.html">
-  <meta property="og:image" content="https://shovoxinternational.com/assets/shovox_official_logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://shovoxinternational.com/assets/og-image.jpg">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,169 +46,6 @@
       --font-display:      'Montserrat', 'Inter', sans-serif;
       --max-width:         1200px;
     }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: var(--font-sans);
-      color: var(--color-text);
-      background: var(--color-bg);
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-    img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
-
-    .container {
-      width: 100%;
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding-inline: clamp(1.25rem, 4vw, 2.5rem);
-    }
-
-    /* Navbar */
-    .navbar {
-      position: fixed;
-      inset-inline: 0;
-      top: 0;
-      z-index: 1000;
-      background: rgba(255, 255, 255, 0.98);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border-bottom: 1.5px solid var(--color-border);
-      transition: all 0.3s ease;
-    }
-    .navbar .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 88px;
-    }
-    .brand-logo {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      text-decoration: none;
-    }
-    .brand-logo-img {
-      height: 58px;
-      width: auto;
-      border-radius: 10px;
-      object-fit: contain;
-    }
-    .brand-text { display: flex; flex-direction: column; }
-    .brand-name {
-      font-family: var(--font-display);
-      font-size: 1.35rem;
-      font-weight: 900;
-      color: var(--color-primary);
-      line-height: 1.15;
-    }
-    .brand-name span { color: var(--color-gold-dark); }
-    .brand-tagline {
-      font-size: 0.72rem;
-      font-weight: 800;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--color-gold-dark);
-      margin-top: 0.1rem;
-    }
-    .nav-links {
-      display: flex;
-      list-style: none;
-      gap: 1.6rem;
-      align-items: center;
-    }
-    .nav-links a {
-      font-size: 0.92rem;
-      font-weight: 600;
-      color: var(--color-text-muted);
-      transition: color 0.2s;
-    }
-    .nav-links a:hover { color: var(--color-primary); }
-    .nav-cta {
-      display: inline-flex;
-      align-items: center;
-      padding: 0.65rem 1.35rem;
-      font-size: 0.9rem;
-      font-weight: 700;
-      border-radius: 8px;
-      background: linear-gradient(135deg, #111f33, #0a111c);
-      color: var(--color-gold) !important;
-      border: 1px solid rgba(223, 186, 135, 0.4);
-      transition: transform 0.2s, border-color 0.2s;
-    }
-    .nav-cta:hover {
-      transform: translateY(-2px);
-      border-color: var(--color-gold);
-    }
-    .lang-selector {
-      display: flex;
-      gap: 0.35rem;
-      align-items: center;
-    }
-    .lang-btn {
-      background: var(--color-surface-sub);
-      border: 1px solid var(--color-border);
-      border-radius: 6px;
-      padding: 0.3rem 0.65rem;
-      font-size: 0.78rem;
-      font-weight: 700;
-      cursor: pointer;
-      color: var(--color-text-muted);
-      transition: all 0.2s;
-    }
-    .lang-btn.active, .lang-btn:hover {
-      background: var(--color-primary);
-      color: var(--color-gold);
-      border-color: var(--color-gold);
-    }
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 6px;
-    }
-    .hamburger span {
-      display: block;
-      width: 26px;
-      height: 2.5px;
-      background: var(--color-primary);
-      border-radius: 2px;
-    }
-    .mobile-nav {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: #ffffff;
-      z-index: 2000;
-      padding: 2rem 1.5rem;
-      flex-direction: column;
-      gap: 1.25rem;
-      overflow-y: auto;
-    }
-    .mobile-nav.open { display: flex; }
-    .mobile-nav-close {
-      align-self: flex-end;
-      background: none;
-      border: none;
-      font-size: 1.75rem;
-      cursor: pointer;
-      color: var(--color-primary);
-      padding: 0.5rem;
-    }
-    .mobile-nav a {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--color-primary);
-      border-bottom: 1px solid var(--color-surface-sub);
-      padding-bottom: 0.65rem;
-    }
-
-    /* Page Banner Header */
     .page-header {
       background:
         radial-gradient(circle at 85% 30%, rgba(223, 186, 135, 0.15) 0%, transparent 45%),
@@ -255,8 +96,6 @@
       font-weight: 700;
       font-size: 0.82rem;
     }
-
-    /* Policy Main Content */
     .policy-section {
       padding: 4.5rem 0;
       background: var(--color-surface);
@@ -272,8 +111,6 @@
       padding: clamp(2rem, 5vw, 3.5rem);
       box-shadow: 0 10px 30px rgba(10, 17, 28, 0.04);
     }
-
-    /* Quick Summary Box */
     .policy-summary-box {
       background: #fdfaf7;
       border: 1.5px solid var(--color-gold-light);
@@ -297,8 +134,6 @@
       font-size: 0.96rem;
       line-height: 1.65;
     }
-
-    /* Content Typography */
     .policy-block {
       margin-bottom: 3rem;
       padding-bottom: 2.5rem;
@@ -366,8 +201,6 @@
       color: var(--color-text);
       font-weight: 700;
     }
-
-    /* Notice & Contact Callouts */
     .policy-note {
       background: var(--color-surface);
       border: 1px solid var(--color-border);
@@ -420,153 +253,90 @@
       border-color: var(--color-gold);
       color: var(--color-gold);
     }
-
-    /* Footer */
-    .footer {
-      background: #060b12;
-      border-top: 1.5px solid rgba(223, 186, 135, 0.3);
-      color: rgba(255,255,255,0.72);
-      padding: 4.5rem 0 2rem;
-    }
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 2.5rem;
-      margin-bottom: 3.5rem;
-    }
-    .footer-brand .footer-brand-logo {
-      border-radius: 12px;
-      border: 1px solid rgba(223, 186, 135, 0.3);
-    }
-    .footer-brand p {
-      font-size: 0.94rem;
-      line-height: 1.75;
-      max-width: 360px;
-      color: rgba(255,255,255,0.7);
-    }
-    .footer h4 {
-      color: var(--color-white);
-      font-size: 0.95rem;
-      font-weight: 800;
-      margin-bottom: 1.35rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      border-bottom: 2px solid var(--color-gold);
-      display: inline-block;
-      padding-bottom: 0.3rem;
-    }
-    .footer-links {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-    .footer-links a {
-      font-size: 0.92rem;
-      color: rgba(255,255,255,0.75);
-      transition: color 0.2s;
-    }
-    .footer-links a:hover { color: var(--color-gold); }
-    .footer-bottom {
-      border-top: 1px solid rgba(255,255,255,0.12);
-      padding-top: 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.88rem;
-      color: rgba(255,255,255,0.6);
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    /* WhatsApp Float */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      z-index: 999;
-      background: #25d366;
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 6px 24px rgba(37, 211, 102, 0.5);
-      transition: transform 0.25s, box-shadow 0.25s;
-    }
-    .whatsapp-float:hover {
-      transform: scale(1.1);
-      box-shadow: 0 8px 32px rgba(37, 211, 102, 0.65);
-    }
-
-    @media (max-width: 992px) {
-      .nav-links { display: none; }
-      .hamburger { display: flex; }
-      .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
-    }
     @media (max-width: 640px) {
-      .footer-grid { grid-template-columns: 1fr; }
-      .footer-bottom { flex-direction: column; text-align: center; }
-      .policy-card { padding: 1.5rem; }
-      .policy-block h2 { font-size: 1.25rem; }
-      .whatsapp-float { bottom: 20px; right: 20px; width: 52px; height: 52px; }
+    .policy-card { padding: 1.5rem; }
+    .policy-block h2 { font-size: 1.25rem; }
+    
     }
+  
   </style>
 </head>
 <body>
 
   <!-- Standard Navbar -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="index.html" class="brand-logo">
-        <img src="assets/shovox_official_logo.png" alt="Shovox International LLP Logo" class="brand-logo-img" width="64" height="64">
-        <div class="brand-text">
-          <span class="brand-name">SHOVOX <span>INTERNATIONAL</span></span>
-          <span class="brand-tagline">LLP · Bengaluru, India</span>
-        </div>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="import-distribution.html">Import &amp; Distribution</a></li>
-        <li><a href="medical.html">Medical Products</a></li>
-        <li><a href="foods-spices.html">Foods &amp; Spices</a></li>
-        <li><a href="auto-parts.html">Auto Parts</a></li>
-        <li><a href="elect.html">SHOVOX ELECT</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html" class="nav-cta">Contact</a></li>
-      </ul>
-      <div class="lang-selector">
-        <button type="button" class="lang-btn active" data-lang="en" title="English">EN</button>
-        <button type="button" class="lang-btn" data-lang="ta" title="Tamil">&#2980;&#2990;&#3007;&#2996;&#3021;</button>
-        <button type="button" class="lang-btn" data-lang="hi" title="Hindi">&#2361;&#2367;&#2306;&#2342;&#2368;</button>
-        <button type="button" class="lang-btn" data-lang="ar" title="Arabic">&#1593;&#1585;&#1576;&#1610;</button>
-        <button type="button" class="lang-btn" data-lang="kn" title="Kannada">&#3221;&#3240;&#3309;&#3240;&#3233;</button>
-      </div>
-      <button class="hamburger" id="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <div class="mobile-nav" id="mobileNav">
-    <button class="mobile-nav-close" id="mobileClose" aria-label="Close menu">✕</button>
-    <a href="index.html">Home</a>
-    <a href="import-distribution.html">Import &amp; Distribution</a>
-    <a href="medical.html">Medical Products</a>
-    <a href="foods-spices.html">Foods &amp; Spices</a>
-    <a href="auto-parts.html">Auto Parts</a>
-    <a href="elect.html">SHOVOX ELECT</a>
-    <a href="about.html">About Us</a>
-    <a href="contact.html">Contact</a>
-    <div class="lang-selector" style="display: flex; gap: 0.5rem; margin-top: 1.5rem;">
-      <button type="button" class="lang-btn active" data-lang="en">EN</button>
-      <button type="button" class="lang-btn" data-lang="ta">&#2980;&#2990;&#3007;&#2996;&#3021;</button>
-      <button type="button" class="lang-btn" data-lang="hi">&#2361;&#2367;&#2306;&#2342;&#2368;</button>
-      <button type="button" class="lang-btn" data-lang="ar">&#1593;&#1585;&#1576;&#1610;</button>
-      <button type="button" class="lang-btn" data-lang="kn">&#3221;&#3240;&#3309;&#3240;&#3233;</button>
+  <!-- ============ SITE HEADER (shared) ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="SHOVOX INTERNATIONAL LLP home">
+        <img src="assets/shovox-mark.png" alt="" class="brand-mark" width="48" height="48">
+        <span class="brand-text"><span class="brand-name">SHOVOX</span><span class="brand-sub">INTERNATIONAL</span></span>
+      </a>
+      <nav class="nav-main" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li class="has-dropdown">
+            <button type="button" class="nav-drop-btn" aria-expanded="false" aria-controls="divisions-menu"><span data-i18n="nav.divisions">Divisions</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+            <ul class="dropdown-menu" id="divisions-menu">
+            <li><a href="import-distribution.html"><span class="dd-title" data-i18n="nav.import">Import &amp; Distribution</span><span class="dd-desc" data-i18n="divisions.import.desc">Sourcing international products for the Indian market</span></a></li>
+            <li><a href="medical.html"><span class="dd-title" data-i18n="nav.medical">Medical Products</span><span class="dd-desc" data-i18n="divisions.medical.desc">Healthcare textiles, hospital garments and medical supplies</span></a></li>
+            <li><a href="foods-spices.html"><span class="dd-title" data-i18n="nav.foods">Foods &amp; Spices</span><span class="dd-desc" data-i18n="divisions.foods.desc">Indian agricultural products for global markets</span></a></li>
+            <li><a href="auto-parts.html"><span class="dd-title" data-i18n="nav.auto">Auto Parts</span><span class="dd-desc" data-i18n="divisions.auto.desc">Precision components and engineered parts</span></a></li>
+            <li><a href="elect.html"><span class="dd-title" data-i18n="nav.elect">SHOVOX ELECT</span><span class="dd-desc" data-i18n="divisions.elect.desc">Electronics sourcing, components and assembly</span></a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-menu">
+          <button type="button" class="lang-toggle" aria-expanded="false" aria-label="Change language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span class="lang-current">EN</span></button>
+          <div class="lang-list">
+          <button type="button" class="lang-btn active" data-lang="en" lang="en">English</button>
+          <button type="button" class="lang-btn" data-lang="ta" lang="ta">தமிழ்</button>
+          <button type="button" class="lang-btn" data-lang="hi" lang="hi">हिंदी</button>
+          <button type="button" class="lang-btn" data-lang="ar" lang="ar">العربية</button>
+          <button type="button" class="lang-btn" data-lang="kn" lang="kn">ಕನ್ನಡ</button>
+          </div>
+        </div>
+        <a href="contact.html" class="btn btn-navy btn-sm nav-cta" data-i18n="nav.enquire">Request a Quote</a>
+        <button type="button" class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
+      </div>
     </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <div class="mobile-nav-head">
+      <a href="index.html" class="brand" aria-label="SHOVOX INTERNATIONAL LLP home">
+        <img src="assets/shovox-mark.png" alt="" class="brand-mark" width="48" height="48">
+        <span class="brand-text"><span class="brand-name">SHOVOX</span><span class="brand-sub">INTERNATIONAL</span></span>
+      </a>
+      <button type="button" class="mobile-nav-close" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="mobile-nav-links" aria-label="Mobile">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="import-distribution.html" data-i18n="nav.import">Import &amp; Distribution</a>
+      <a href="medical.html" data-i18n="nav.medical">Medical Products</a>
+      <a href="foods-spices.html" data-i18n="nav.foods">Foods &amp; Spices</a>
+      <a href="auto-parts.html" data-i18n="nav.auto">Auto Parts</a>
+      <a href="elect.html" data-i18n="nav.elect">SHOVOX ELECT</a>
+      <a href="about.html" data-i18n="nav.about">About Us</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="mobile-nav-label">Language</div>
+    <div class="mobile-lang">
+      <button type="button" class="lang-btn active" data-lang="en" lang="en">EN</button>
+      <button type="button" class="lang-btn" data-lang="ta" lang="ta">தமிழ்</button>
+      <button type="button" class="lang-btn" data-lang="hi" lang="hi">हिंदी</button>
+      <button type="button" class="lang-btn" data-lang="ar" lang="ar">عربي</button>
+      <button type="button" class="lang-btn" data-lang="kn" lang="kn">ಕನ್ನಡ</button>
+    </div>
+    <a href="contact.html" class="btn btn-navy" data-i18n="nav.enquire">Request a Quote</a>
   </div>
+  <div id="main-content" tabindex="-1"></div>
+
 
   <!-- Page Banner Header -->
   <header class="page-header">
@@ -733,95 +503,64 @@
     <!-- ==========================================================================
        FOOTER
        ========================================================================== -->
+  
+
+<!-- Standard Scripts -->
+  <!-- ============ SITE FOOTER (shared) ============ -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <!-- Col 1: Brand & Contact -->
         <div class="footer-brand">
-          <a href="index.html" class="brand-logo" style="margin-bottom: 1.25rem; display: inline-flex; align-items: center; gap: 0.75rem; text-decoration: none;">
-            <img src="assets/shovox_official_logo.png" alt="SHOVOX INTERNATIONAL LLP Logo" class="footer-brand-logo" style="width: 52px; height: 52px; object-fit: contain;">
-            <div class="brand-text">
-              <div class="brand-name" style="color: #ffffff; font-size: 1.15rem; font-weight: 800;">SHOVOX <span style="color: var(--gold);">INTERNATIONAL</span></div>
-              <div class="brand-tagline" style="color: var(--gold-dark); font-size: 0.65rem; letter-spacing: 0.15em;">LLP · BENGALURU, INDIA</div>
-            </div>
-          </a>
-          <p data-i18n="footer.tagline" style="color: rgba(241,245,249,0.8); font-size: 0.88rem; line-height: 1.6;">
-            Connecting Global Markets Through Quality and Trust.
-          </p>
-          <div style="margin-top: 1.25rem; font-size: 0.88rem; line-height: 1.8; color: rgba(241,245,249,0.75);">
-            <div>📍 Bengaluru, Karnataka, India</div>
-            <div>✉️ <a href="mailto:support@shovoxinternational.com" style="color: var(--gold); text-decoration: none;">support@shovoxinternational.com</a></div>
-            <div>📱 <a href="tel:+917483217807" style="color: var(--gold); text-decoration: none;">+91 74832 17807</a></div>
-          </div>
+          <a href="index.html" aria-label="SHOVOX INTERNATIONAL LLP home"><img src="assets/shovox-logo.webp" alt="SHOVOX INTERNATIONAL" class="footer-logo" width="132" height="116" loading="lazy"></a>
+          <p data-i18n="footer.tagline">Connecting Global Markets Through Quality and Trust.</p>
+          <ul class="footer-contact">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Basavanagar, Bengaluru 560037, Karnataka, India</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg><a href="mailto:support@shovoxinternational.com">support@shovoxinternational.com</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+917483217807">+91 74832 17807</a></li>
+          </ul>
         </div>
-
-        <!-- Col 2: Quick Links (No repetition with divisions!) -->
         <div>
-          <h4 data-i18n="footer.quick_links" style="color: #ffffff; font-size: 1.05rem; margin-bottom: 1rem; font-weight: 700;">Quick Links</h4>
-          <ul class="footer-links" style="list-style: none; padding: 0; margin: 0; line-height: 2;">
+          <h4 data-i18n="footer.quick_links">Quick Links</h4>
+          <ul class="footer-links">
             <li><a href="index.html" data-i18n="nav.home">Home</a></li>
             <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
-            <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
             <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
             <li><a href="terms.html" data-i18n="footer.terms">Terms &amp; Conditions</a></li>
-            <li><a href="terms.html#disclaimers">Regulatory Disclaimers</a></li>
           </ul>
         </div>
-
-        <!-- Col 3: Our Divisions (Title Case, avoiding all-uppercase) -->
         <div>
-          <h4 data-i18n="footer.divisions_label" style="color: #ffffff; font-size: 1.05rem; margin-bottom: 1rem; font-weight: 700;">Our Divisions</h4>
-          <ul class="footer-links" style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-            <li><a href="import-distribution.html">Import &amp; Distribution</a></li>
-            <li><a href="medical.html">Shovox Medical</a></li>
-            <li><a href="foods-spices.html">Shovox Foods &amp; Spices</a></li>
-            <li><a href="auto-parts.html">Shovox Auto Parts</a></li>
-            <li><a href="elect.html">Shovox Elect</a></li>
+          <h4 data-i18n="footer.divisions_label">Our Divisions</h4>
+          <ul class="footer-links">
+            <li><a href="import-distribution.html" data-i18n="nav.import">Import &amp; Distribution</a></li>
+            <li><a href="medical.html" data-i18n="nav.medical">Medical Products</a></li>
+            <li><a href="foods-spices.html" data-i18n="nav.foods">Foods &amp; Spices</a></li>
+            <li><a href="auto-parts.html" data-i18n="nav.auto">Auto Parts</a></li>
+            <li><a href="elect.html" data-i18n="nav.elect">SHOVOX ELECT</a></li>
           </ul>
         </div>
-
-        <!-- Col 4: Leadership -->
         <div>
-          <h4 data-i18n="footer.leadership" style="color: #ffffff; font-size: 1.05rem; margin-bottom: 1rem; font-weight: 700;">Leadership</h4>
-          <div style="font-size: 0.9rem; line-height: 1.6; color: rgba(241,245,249,0.75);">
-            <div style="margin-bottom: 1rem;">
-              <strong style="color: #ffffff; display: block; font-size: 0.95rem;">Dr Sivakannan Subramani</strong>
-              <span style="font-size: 0.82rem; color: var(--gold);" data-i18n="footer.founder">Founder &amp; Managing Partner</span>
-            </div>
-            <div>
-              <strong style="color: #ffffff; display: block; font-size: 0.95rem;">Ms Rashmi H M</strong>
-              <span style="font-size: 0.82rem; color: var(--gold);" data-i18n="footer.partner">Managing Partner</span>
-            </div>
-            <div style="margin-top: 1rem; font-size: 0.78rem; color: rgba(241,245,249,0.6); line-height: 1.5;">
-              Registered under MCA, Govt of India · Basavanagar, Bangalore — 560037
-            </div>
-          </div>
+          <h4 data-i18n="footer.leadership">Leadership</h4>
+          <div class="footer-leader"><strong>Dr Sivakannan Subramani</strong><span data-i18n="footer.founder">Founder &amp; Managing Partner</span></div>
+          <div class="footer-leader"><strong>Ms Rashmi H M</strong><span data-i18n="footer.partner">Managing Partner</span></div>
+          <p class="footer-reg">SHOVOX INTERNATIONAL LLP<br>Registered under MCA, Govt of India</p>
         </div>
       </div>
-
-      <!-- Bottom Bar -->
       <div class="footer-bottom">
-        <p>&copy; <span id="year"></span> <span data-i18n="footer.copyright">SHOVOX INTERNATIONAL LLP. All rights reserved.</span></p>
-        <div style="display: flex; gap: 1.5rem; font-size: 0.85rem; flex-wrap: wrap;">
-          <a href="privacy.html" style="color: rgba(241,245,249,0.6); text-decoration: none;" data-i18n="footer.privacy">Privacy Policy</a>
-          <span style="color: rgba(241,245,249,0.3);">|</span>
-          <a href="terms.html" style="color: rgba(241,245,249,0.6); text-decoration: none;" data-i18n="footer.terms">Terms &amp; Conditions</a>
-          <span style="color: rgba(241,245,249,0.3);">|</span>
-          <a href="terms.html#disclaimers" style="color: rgba(241,245,249,0.6); text-decoration: none;">Regulatory Disclaimers</a>
-        </div>
+        <p>&copy; <span id="year">2026</span> <span data-i18n="footer.copyright">SHOVOX INTERNATIONAL LLP. All rights reserved.</span></p>
+        <nav aria-label="Legal">
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="terms.html" data-i18n="footer.terms">Terms &amp; Conditions</a>
+          <a href="terms.html#disclaimers">Regulatory Disclaimers</a>
+        </nav>
       </div>
     </div>
   </footer>
 
-    <!-- WhatsApp Floating Action Button -->
-  <a href="https://wa.me/917483217807" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:32px;height:32px;fill:white;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
+  <a href="https://wa.me/917483217807" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 
-  <!-- Standard Scripts -->
   <script src="js/i18n.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/forms.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
