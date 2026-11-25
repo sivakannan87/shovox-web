@@ -9,7 +9,15 @@
     "about": "About Us",
     "contact": "Contact",
     "enquire": "Request a Quote",
-    "divisions": "Divisions"
+    "divisions": "Divisions",
+    "products": "Products",
+    "markets": "Duty-free Markets",
+    "textiles": "Home & Hospital Textiles",
+    "workwear": "Workwear & Uniforms",
+    "spices": "Spices",
+    "leather": "Leather Goods",
+    "engineering": "Engineering Hardware",
+    "imports": "Imports (coming soon)"
   },
   "hero": {
     "badge": "India-Based International Trading Business",
@@ -122,5 +130,18 @@
     "medical": "Supplier qualification, quality specifications, export eligibility and destination-country regulatory requirements must be confirmed before accepting any order. We do not claim sterile status, medical-grade performance or regulatory approval for any product.",
     "food": "Food-safety requirements, export eligibility, laboratory testing and destination-country import regulations must be verified before commercial engagement. Nutritional values, certifications and geographic origin claims are not implied.",
     "auto": "Manufacturing feasibility, inspection requirements, quality documentation, delivery terms and pricing are confirmed before an order is accepted. SHOVOX AUTO PARTS does not own a manufacturing facility."
+  },
+  "home2": {
+    "badge": "Export house in Bengaluru, India",
+    "h1": "Indian textiles, spices and leather goods,",
+    "h1_highlight": "duty-free to the UK, UAE, Oman and Australia",
+    "desc": "We source from Indian mills and processors that we visit and check ourselves, and ship with the documents your customs need, including the preferential certificate of origin that gives you 0% import duty.",
+    "btn_markets": "See duty-free markets",
+    "products_title": "What we export",
+    "markets_title": "Four markets, 0% import duty",
+    "request_samples": "Request samples"
+  },
+  "page": {
+    "home": "Indian Textiles, Spices & Leather — Duty-free Export"
   }
 }
